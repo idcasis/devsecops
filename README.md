@@ -10,20 +10,60 @@ Se implementó un pipeline DevSecOps utilizando GitHub Actions con las siguiente
 - Trivy (SCA)
 - GitLeaks (Detección de secretos)
 
-## Cómo levantar la aplicación localmente
+## Como levantar la aplicación localmente
+Requisitos previos
 
-### Requisitos
+Antes de ejecutar la aplicación es necesario tener instalado:
 
-- Docker Desktop
-- Git
+Git
+Docker Desktop
+Conexión a Internet para descargar la imagen de Docker
 
-### Ejecución
+Verificar que Docker está funcionando:
+
+docker --version
+Clonar el repositorio
+git clone https://github.com/idcasis/devsecops.git
+cd devsecops
+Descargar la imagen de OWASP Juice Shop
+
+Si es la primera vez que se ejecuta la aplicación, descargar la imagen oficial:
+
+docker pull bkimminich/juice-shop
+Ejecutar la aplicación
+
+Iniciar el contenedor:
 
 docker run -d -p 3000:3000 bkimminich/juice-shop
 
-Acceder desde:
+Parámetros utilizados:
+
+-d: ejecuta el contenedor en segundo plano.
+-p 3000:3000: publica el puerto 3000 del contenedor en el puerto 3000 del equipo local.
+Verificar que el contenedor está en ejecución
+docker ps
+
+Debe aparecer un contenedor basado en la imagen bkimminich/juice-shop.
+
+Acceder a la aplicación
+
+Abrir un navegador web y dirigirse a:
 
 http://localhost:3000
+
+Si la aplicación inició correctamente, se mostrará la página principal de OWASP Juice Shop.
+
+Detener la aplicación
+
+Obtener el identificador del contenedor:
+
+docker ps
+
+Detener el contenedor:
+
+docker stop <container_id>
+Reiniciar la aplicación
+docker start <container_id>
 
 ## Evidencias del laboratorio
 
