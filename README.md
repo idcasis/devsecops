@@ -1,3 +1,45 @@
+# Laboratorio DevSecOps - OWASP Juice Shop
+
+## Descripción
+
+Este repositorio fue utilizado para el desarrollo del Laboratorio #1 de Tópicos Especiales de la Maestría en Ciencias Computacionales de la Universidad Tecnológica de Panamá.
+
+Se implementó un pipeline DevSecOps utilizando GitHub Actions con las siguientes herramientas:
+
+- Semgrep (SAST)
+- Trivy (SCA)
+- GitLeaks (Detección de secretos)
+
+## Cómo levantar la aplicación localmente
+
+### Requisitos
+
+- Docker Desktop
+- Git
+
+### Ejecución
+
+docker run -d -p 3000:3000 bkimminich/juice-shop
+
+Acceder desde:
+
+http://localhost:3000
+
+## Evidencias del laboratorio
+
+- Pipeline DevSecOps implementado mediante GitHub Actions.
+- Remediación de vulnerabilidades en dependencias.
+- Detección de secretos mediante GitLeaks.
+
+Estudiantes:
+Diego Casis
+Cecydi Bethancourt
+John Hou
+
+-------------------------
+---
+
+
 # ![Juice Shop Logo](https://raw.githubusercontent.com/juice-shop/juice-shop/master/frontend/src/assets/public/images/JuiceShop_Logo_100px.png) OWASP Juice Shop
 
 [![OWASP Flagship](https://img.shields.io/badge/owasp-flagship%20project-48A646.svg)](https://owasp.org/projects/#sec-flagships)
