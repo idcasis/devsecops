@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este repositorio fue utilizado para el desarrollo del Laboratorio #1 de Tópicos Especiales de la Maestría en Ciencias Computacionales de la Universidad Tecnológica de Panamá.
+Este repositorio fue utilizado para el desarrollo del Laboratorio #1 de la materia de Tópicos Especiales en la Universidad Tecnológica de Panamá. Profesor Xavier Trujillo
 
 Se implementó un pipeline DevSecOps utilizando GitHub Actions con las siguientes herramientas:
 
